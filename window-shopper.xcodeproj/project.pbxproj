@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510C94C2202C0F570024CB79 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C94C1202C0F570024CB79 /* CategoryCell.swift */; };
 		5154FAE2201A901C0075AD76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154FAE1201A901C0075AD76 /* AppDelegate.swift */; };
-		5154FAE4201A901C0075AD76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154FAE3201A901C0075AD76 /* ViewController.swift */; };
+		5154FAE4201A901C0075AD76 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154FAE3201A901C0075AD76 /* CategoriesVC.swift */; };
 		5154FAE7201A901C0075AD76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5154FAE5201A901C0075AD76 /* Main.storyboard */; };
 		5154FAE9201A901C0075AD76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5154FAE8201A901C0075AD76 /* Assets.xcassets */; };
 		5154FAEC201A901C0075AD76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5154FAEA201A901C0075AD76 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		510C94C1202C0F570024CB79 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		5154FADE201A901C0075AD76 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5154FAE1201A901C0075AD76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5154FAE3201A901C0075AD76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5154FAE3201A901C0075AD76 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		5154FAE6201A901C0075AD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5154FAE8201A901C0075AD76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5154FAEB201A901C0075AD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510C94BE202C0E970024CB79 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		510C94BF202C0EA00024CB79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		510C94C0202C0F1E0024CB79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				510C94C1202C0F570024CB79 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5154FAD5201A901C0075AD76 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +78,11 @@
 		5154FAE0201A901C0075AD76 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				510C94C0202C0F1E0024CB79 /* View */,
+				510C94BF202C0EA00024CB79 /* Models */,
+				510C94BE202C0E970024CB79 /* Controllers */,
 				5154FAE1201A901C0075AD76 /* AppDelegate.swift */,
-				5154FAE3201A901C0075AD76 /* ViewController.swift */,
+				5154FAE3201A901C0075AD76 /* CategoriesVC.swift */,
 				5154FAE5201A901C0075AD76 /* Main.storyboard */,
 				5154FAE8201A901C0075AD76 /* Assets.xcassets */,
 				5154FAEA201A901C0075AD76 /* LaunchScreen.storyboard */,
@@ -136,8 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5154FAE4201A901C0075AD76 /* ViewController.swift in Sources */,
+				5154FAE4201A901C0075AD76 /* CategoriesVC.swift in Sources */,
 				5154FAE2201A901C0075AD76 /* AppDelegate.swift in Sources */,
+				510C94C2202C0F570024CB79 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
