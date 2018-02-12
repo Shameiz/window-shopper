@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="49" width="375" height="675"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="155" id="eCQ-cA-01d" customClass="CategoryCell" customModule="window_shopper" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="155" id="eCQ-cA-01d" customClass="CategoryCell" customModule="window_shopper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eCQ-cA-01d" id="dIi-2b-GPU">
@@ -37,6 +38,9 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="x4x-8a-jps">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="154.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="154.66999999999999" id="feH-LO-9BT"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shirts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9F-Uv-XEx">
                                                     <rect key="frame" x="152.66666666666666" y="61" width="69.666666666666657" height="33"/>
@@ -49,8 +53,10 @@
                                                 <constraint firstItem="V9F-Uv-XEx" firstAttribute="centerX" secondItem="dIi-2b-GPU" secondAttribute="centerX" id="38F-us-DFw"/>
                                                 <constraint firstItem="x4x-8a-jps" firstAttribute="leading" secondItem="dIi-2b-GPU" secondAttribute="leading" id="9Hm-GL-jaV"/>
                                                 <constraint firstAttribute="trailing" secondItem="x4x-8a-jps" secondAttribute="trailing" id="E5M-ve-36l"/>
+                                                <constraint firstItem="V9F-Uv-XEx" firstAttribute="top" secondItem="dIi-2b-GPU" secondAttribute="topMargin" constant="50" id="HFD-9J-hMB"/>
                                                 <constraint firstItem="x4x-8a-jps" firstAttribute="top" secondItem="dIi-2b-GPU" secondAttribute="top" id="NF0-mL-UpV"/>
-                                                <constraint firstAttribute="bottom" secondItem="x4x-8a-jps" secondAttribute="bottom" id="otd-gU-fdY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="V9F-Uv-XEx" secondAttribute="bottom" constant="50" id="W1Y-nv-Lje"/>
+                                                <constraint firstAttribute="bottom" secondItem="x4x-8a-jps" secondAttribute="bottom" constant="10" id="otd-gU-fdY"/>
                                                 <constraint firstItem="V9F-Uv-XEx" firstAttribute="centerY" secondItem="dIi-2b-GPU" secondAttribute="centerY" id="wsk-VB-1XV"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -66,7 +72,7 @@
                         <constraints>
                             <constraint firstItem="Xg3-TD-ih3" firstAttribute="top" secondItem="Zk4-Q4-1nu" secondAttribute="bottom" id="3El-Cg-Fa9"/>
                             <constraint firstItem="Xg3-TD-ih3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bkd-BY-nA0"/>
-                            <constraint firstAttribute="bottom" secondItem="Xg3-TD-ih3" secondAttribute="bottom" id="DLX-58-RSW"/>
+                            <constraint firstAttribute="bottom" secondItem="Xg3-TD-ih3" secondAttribute="bottom" id="E0A-b0-d87"/>
                             <constraint firstItem="Zk4-Q4-1nu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WCR-LP-QnM"/>
                             <constraint firstItem="Xg3-TD-ih3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="deT-M1-tMj"/>
                             <constraint firstItem="Zk4-Q4-1nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iao-hH-byv"/>
