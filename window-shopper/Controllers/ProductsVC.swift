@@ -19,6 +19,7 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
 
     func initProducts(category:Category){
+        navigationItem.title=category.title
         self.products = DataService.instance.getProducts(title: category.title)
     }
     
